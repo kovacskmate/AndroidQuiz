@@ -1,0 +1,7 @@
+Id;Question;A;B;C;D;Correct;Category
+1;2+2=?;4;3;7;6;4;Addition
+2;3964+5943=?;8907;9807;9907;9917;9907;Addition
+3;6519+1697=?;7216;8116;8206;8216;8216;Addition
+4;5x(2x67)=?;670;609;469;345;670;Multiplication
+5;91x84=?;7644;7654;7694;7744;7644;Multiplication
+6;123x321=?;39583;39483;38982;38923;39483;Multiplication

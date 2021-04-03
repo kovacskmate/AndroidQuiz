@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:background="@color/russianGreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="154dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/sacramentoGreen"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/categoriesText"
+        android:layout_width="257dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="@string/select_categories"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/sacramentoGreen"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionText" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="310dp"
+        android:background="@color/someGreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoriesText">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animationCache="false"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="197dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_manager"
+        android:text="@string/reset_answers"
+        android:textColor="@color/whiteLike"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showStatsChckbx" />
+
+    <CheckBox
+        android:id="@+id/showStatsChckbx"
+        android:layout_width="172dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:buttonTint="@color/sacramentoGreen"
+        android:gravity="center"
+        android:scaleX="1.4"
+        android:scaleY="1.4"
+        android:text="@string/show_statistics"
+        android:textColor="@color/whiteLike"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+    <!--<TextView
+        android:id="@+id/divisionText"
+        android:layout_width="175dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="137dp"
+        android:text="Division"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <TextView
+        android:id="@+id/multiplicationText"
+        android:layout_width="175dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="Multiplication"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisionText" />
+
+    <TextView
+        android:id="@+id/subtractionText"
+        android:layout_width="175dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="Subtraction"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiplicationText" />
+
+    <TextView
+        android:id="@+id/summationText"
+        android:layout_width="175dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="Summation"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtractionText" />
+
+    <CheckBox
+        android:id="@+id/divisionCheck"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="55dp"
+        android:checked="true"
+        app:layout_constraintStart_toEndOf="@+id/divisionText"
+        app:layout_constraintTop_toTopOf="@+id/divisionText" />
+
+    <CheckBox
+        android:id="@+id/multiplicationCheck"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="55dp"
+        android:checked="true"
+        app:layout_constraintStart_toEndOf="@+id/multiplicationText"
+        app:layout_constraintTop_toTopOf="@+id/multiplicationText" />
+
+    <CheckBox
+        android:id="@+id/subtractionCheck"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="55dp"
+        android:checked="true"
+        app:layout_constraintStart_toEndOf="@+id/subtractionText"
+        app:layout_constraintTop_toTopOf="@+id/subtractionText" />
+
+    <CheckBox
+        android:id="@+id/summationCheck"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="55dp"
+        android:checked="true"
+        app:layout_constraintStart_toEndOf="@+id/summationText"
+        app:layout_constraintTop_toTopOf="@+id/summationText" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

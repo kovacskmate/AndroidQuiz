@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1073968939454",
+    "firebase_url": "https://quizgame-66d20.firebaseio.com",
+    "project_id": "quizgame-66d20",
+    "storage_bucket": "quizgame-66d20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073968939454:android:18ba86d137e47c0a8ef9ef",
+        "android_client_info": {
+          "package_name": "com.example.quizjava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073968939454-apqnniqnck163gm0e68dou4fsfm2uqgs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVy4M04ku2pNQsHYg57HGt9H1S-K2FpQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073968939454-apqnniqnck163gm0e68dou4fsfm2uqgs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

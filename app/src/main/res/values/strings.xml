@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quiz Game</string>
+    <string name="select_categories">Select categories</string>
+    <string name="settings">Settings</string>
+    <string name="reset_answers">Reset answers</string>
+    <string name="show_statistics">Show statistics</string>
+</resources>

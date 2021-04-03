@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--android:stateListAnimator="@null" has to be added to buttons because Buttons in Lollipop and higher have a default
+    elevation to them which causes them to always draw on top. You can change this by overriding the default StateListAnimator.-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:background="@color/russianGreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Game">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/popUp"
+        app:layout_constraintEnd_toEndOf="@+id/popUp"
+        app:layout_constraintStart_toStartOf="@+id/popUp"
+        app:layout_constraintTop_toTopOf="@+id/popUp">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/aButton"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_manager"
+        android:stateListAnimator="@null"
+        android:text="aAnswer"
+        android:textColor="@color/whiteLike"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionText" />
+
+    <Button
+        android:id="@+id/bButton"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_manager"
+        android:stateListAnimator="@null"
+        android:text="bAnswer"
+        android:textColor="@color/whiteLike"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aButton" />
+
+    <Button
+        android:id="@+id/cButton"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_manager"
+        android:stateListAnimator="@null"
+        android:text="cAnswer"
+        android:textColor="@color/whiteLike"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/bButton" />
+
+    <Button
+        android:id="@+id/dButton"
+        android:layout_width="360dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_manager"
+        android:stateListAnimator="@null"
+        android:text="dAnswer"
+        android:textColor="@color/whiteLike"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cButton" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="327dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="16dp"
+        android:autoText="false"
+        android:gravity="center"
+        android:text="Question"
+        android:textAllCaps="true"
+        android:textColor="@color/sacramentoGreen"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/popUp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/russianGreen"
+        android:clickable="false"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/sacramentoGreen"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pieLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/russianGreen"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="181dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+        <TextView
+            android:id="@+id/statsText"
+            android:layout_width="364dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="66dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/sacramentoGreen"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/piechart"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

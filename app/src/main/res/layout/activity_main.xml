@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:background="@color/russianGreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="283dp"
+        android:layout_height="238dp"
+        android:rotation="-20"
+        android:src="@drawable/question_mark"
+        android:tint="@color/whiteLike"
+        app:layout_constraintBottom_toBottomOf="@+id/questionText"
+        app:layout_constraintEnd_toEndOf="@+id/questionText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/questionText"
+        app:layout_constraintTop_toTopOf="@+id/questionText" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="232dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/button_manager"
+        android:text="Start"
+        android:textColor="@color/whiteLike"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionText" />
+
+    <Button
+        android:id="@+id/quitButton"
+        android:layout_width="188dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_manager"
+        android:text="Quit"
+        android:textColor="@color/whiteLike"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="188dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_manager"
+        android:text="Settings"
+        android:textColor="@color/whiteLike"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="288dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="124dp"
+        android:gravity="center"
+        android:text="QUIZ GAME"
+        android:textAlignment="center"
+        android:textColor="@color/sacramentoGreen"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
